@@ -78,7 +78,7 @@ function end()
 {
   k+=1;
  
-  image(img2, 200, 200, 400, 400);
+  image(img2, 200, 200, width, height);
    text("woops try again",100, 300);
   blow()
 }
