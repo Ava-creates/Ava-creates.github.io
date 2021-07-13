@@ -2,15 +2,17 @@ let img;
 var x;
 var y;
 var height;
+var width;
 let img2;
 var k;
 var j;
 
 function setup() {
-  height=400;
+  height=800;
+  width=1300;
   k=0;
   j=1;
-  createCanvas(400,height);
+  createCanvas(width,height);
   img= loadImage("sakura2.png");
   img2=loadImage("l.jpg");
   x=60;
@@ -56,10 +58,10 @@ function stuff()
   y++;
    if(y>height)
     {end();}
-  if(x>400)
+  if(x>width)
     {x=0;}
   if(x<0)
-    {x=350;}
+    {x=1250;}
   
 }
 
