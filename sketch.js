@@ -6,19 +6,24 @@ var width;
 let img2;
 var k;
 var j;
+var s;
+
+function preload()
+{
+   s = loadSound('so.mp3');
+}
 
 function setup() {
   height=800;
   width=1200;
+  s.loop();
   k=0;
   j=1;
   createCanvas(width,height);
   img= loadImage("sakura2.png");
   img2=loadImage("l.jpg");
   x=60;
-  
-  y=60;
-  
+  y=60;  
 }
 
 function draw() {
