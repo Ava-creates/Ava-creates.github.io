@@ -14,8 +14,8 @@ function preload()
 }
 
 function setup() {
-  height=800;
-  width=1200;
+  height=700;
+  width=1250;
   s.loop();
   k=0;
   j=1;
@@ -73,10 +73,8 @@ function stuff()
 function down()
 { 
  y+=50;
-  
-  if(y>height)
+ if(y>height)
     {y=0;}
- 
 }
 
 function end()
