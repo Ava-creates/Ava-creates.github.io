@@ -9,7 +9,7 @@ var j;
 
 function setup() {
   height=800;
-  width=1300;
+  width=1000;
   k=0;
   j=1;
   createCanvas(width,height);
@@ -78,7 +78,7 @@ function end()
 {
   k+=1;
  
-  image(img2, 200, 200, width, height);
+  image(img2, 500, 200, width, height);
    text("woops try again",100, 300);
   blow()
 }
