@@ -83,7 +83,7 @@ function end()
 {
   k+=1;
  
-  image(img2, 500, 200, width, height);
+  image(img2, width/2, height/2, width, height);
    text("woops try again",100, 300);
   blow()
 }
