@@ -9,7 +9,7 @@ var j;
 
 function setup() {
   height=800;
-  width=1000;
+  width=1200;
   k=0;
   j=1;
   createCanvas(width,height);
