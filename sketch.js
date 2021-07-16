@@ -1,5 +1,5 @@
 let img; 
-let game;
+
 var x;
 var y;
 var height;
@@ -12,27 +12,6 @@ var s;
 function preload()
 {
    s = loadSound('so.mp3');
-}
-
-function setup() {
-   
-  height=window.innerHeight;
-  width=window.innerWidth;
-  s.loop();
-  k=0;
-  j=1;
-  createCanvas(width,height);
-  img= loadImage("sakura2.png");
-  img2=loadImage("l.jpg");
-  x=60;
-  y=60;  
-  game=new sakura();
-  
-}
-
-function draw() {
-  background(143,201,163);
-  sakura.display();
 }
 
 class petal
@@ -135,6 +114,29 @@ function blow()
 
 function reset()
 {
- j=j+1;
+ j=j+1;}
+
+var game= new sakura();
+
+function setup() {
+   
+  height=window.innerHeight;
+  width=window.innerWidth;
+  s.loop();
+  k=0;
+  j=1;
+  createCanvas(width,height);
+  img= loadImage("sakura2.png");
+  img2=loadImage("l.jpg");
+  x=60;
+  y=60;  
+  game.display();
+  
+}
+
+function draw() {
+  background(143,201,163);
+  sakura.display();
+}
  
 }
