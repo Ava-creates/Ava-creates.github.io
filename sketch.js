@@ -1,4 +1,5 @@
 let img; 
+let game;
 var x;
 var y;
 var height;
@@ -14,6 +15,7 @@ function preload()
 }
 
 function setup() {
+   
   height=window.innerHeight;
   width=window.innerWidth;
   s.loop();
@@ -24,63 +26,99 @@ function setup() {
   img2=loadImage("l.jpg");
   x=60;
   y=60;  
+  game=new sakura();
+  
 }
 
 function draw() {
   background(143,201,163);
-  stuff();
+  sakura.display();
 }
 
-function stuff()
+class petal
 {
-  background(143,201,163);
-  imageMode(CENTER);
-  image(img, x, y, 50, 50);
+   constructor(x,y)
+   {
+      this.x=x;
+      this.y=y;
+   }
+   
+ 
 
-  
-  if((mouseX>(x-40)&&mouseX<(x)) && mouseY>(y)&&mouseY<(y+40))
+  fall()
+   {
+         if((mouseX>(this.x-40)&&mouseX<(this.x)) && mouseY>(this.y)&&mouseY<(this.y+40))
     {
-      x+=20;
-      y-=30;
+      this.x+=20;
+      this.y-=30;
     }
    
-  if((mouseX>(x)&&mouseX<(x+40)) && mouseY>(y)&&mouseY<(y+40))
+  if((mouseX>(this.x)&&mouseX<(this.x+40)) && mouseY>(this.y)&&mouseY<(this.y+40))
     {
-      x-=20;
-      y-=10;
+      this.x-=20;
+      this.y-=10;
     }
-  if((mouseX>(x-40)&&mouseX<(x)) && mouseY<(y)&&mouseY>(y-40))
+  if((mouseX>(this.x-40)&&mouseX<(this.x)) && mouseY<(this.y)&&mouseY>(this.y-40))
   {
-    x+=20;
-      y+=10;
+    this.x+=20;
+      this.y+=10;
   }
-  if((mouseX>(x)&&mouseX<(x+40)) && mouseY<(y)&&mouseY>(y-40))
+  if((mouseX>(this.x)&&mouseX<(this.x+40)) && mouseY<(this.y)&&mouseY>(this.y-40))
     {
-        x-=20;
-       y+=10;
+        this.x-=20;
+       this.y+=10;
     }
   
-  y++;
-   if(y>height)
+  this.y++;
+      
+   if(this.y>height)
     {end();}
-  if(x>width)
-    {x=0;}
-  if(x<0)
-    {x=1250;}
+  if(this.x>width)
+    {this.x=0;}
+  if(this.x<0)
+    {this.x=window.innerWidth;}
+      
+   }
+   
+     display()
+   {
+  background(143,201,163);
+  imageMode(CENTER);
+  image(img, this.x, this.y, 50, 50);
+      fall();
+   }
+   
   
 }
 
-function down()
-{ 
- y+=50;
- if(y>height)
-    {y=0;}
+class sakura
+{  
+   constructor()
+   {
+   this.petals=[];
+   for( var i=1; i<=20; i++)
+   {
+      petals[i]= new petal(Math.floor((Math.random() * width) + 100), Math.floor((Math.random() * 50) +3 ));
+   }
+   }
+   
+   display()
+   {
+      for( var i=1; i<=20; i++)
+      {
+         this.petals[i].display();
+      }
+   }
+   
 }
-
+       
+   
+   
+   
+   
 function end()
 {
   k+=1;
- 
   image(img2, width/2, height/2, width, height);
    text("woops try again",100, 300);
   blow()
