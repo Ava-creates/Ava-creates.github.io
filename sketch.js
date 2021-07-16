@@ -82,7 +82,7 @@ class petal
    
      display()
    {
-  background(143,201,163);
+  
   imageMode(CENTER);
   image(img, this.x, this.y, 50, 50);
       fall();
@@ -104,6 +104,8 @@ class sakura
    
    display()
    {
+      background(143,201,163);
+      text("i am here");
       for( var i=1; i<=20; i++)
       {
          this.petals[i].display();
