@@ -15,7 +15,7 @@ function preload()
 
 function setup() {
   height=700;
-  width=1250;
+  width=window.innerWidth;
   s.loop();
   k=0;
   j=1;
