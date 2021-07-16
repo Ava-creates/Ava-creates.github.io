@@ -120,8 +120,8 @@ var game= new sakura();
 
 function setup() {
    
-  height=window.innerHeight;
-  width=window.innerWidth;
+  height=800;
+  width=1400;
   s.loop();
   k=0;
   j=1;
@@ -130,13 +130,13 @@ function setup() {
   img2=loadImage("l.jpg");
   x=60;
   y=60;  
-  game.display();
+  
   
 }
 
 function draw() {
   background(143,201,163);
-  sakura.display();
+  game.display();
 }
  
 }
