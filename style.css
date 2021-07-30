@@ -9,6 +9,11 @@ body {
 
 }
 
+.boss
+{
+  display: flex;
+  align-items: left;
+}
 
 #edu
 {
@@ -24,6 +29,9 @@ body {
   color: white;
 }
 
+h{
+  text-align: center;
+}
 
 section
 {
@@ -163,6 +171,7 @@ h
 
 }
 
+
 #projects
 {
   text-align: center;
@@ -231,10 +240,12 @@ h
 
   /* Full-width containers */
   .timeline-4 {
-    width: 100%;
+    position: absolute;
+    max-width: 100%;
     padding-left: 70px;
     padding-right: 25px;
     border-radius: 20%;
+    height: 20%;
   }
 
   /* Make sure that all arrows are pointing leftwards */
@@ -267,6 +278,8 @@ h
   /* fallback for old browsers */
   background: #6a11cb;
   padding: 3vw;
+  position: relative;
+   width: 20px;
 
   /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
@@ -283,6 +296,8 @@ h
   padding: 3vw;
 
   display: block;
+
+  width: 20vw;
 
 
   /* Chrome 10-25, Safari 5.1-6 */
