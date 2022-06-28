@@ -8,6 +8,7 @@ var k;
 var j;
 var s;
 
+
 function preload()
 {
    s = loadSound('so.mp3');
@@ -28,6 +29,7 @@ function setup() {
 
 function draw() {
   background(143,201,163);
+  
   stuff();
 }
 

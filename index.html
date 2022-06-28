@@ -5,9 +5,9 @@
 	<title>Avani :)</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet">
 </head>
@@ -15,42 +15,39 @@
 
 
 <nav class="navbar navbar-expand-md navbar-dark sticky-top">
-  <ul class="nav navbar-nav">
-    <li><a href="#about_me">Meet Me!</a></li>
-    <li><a href="#edu">Education!</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#skills">Skills</a></li>
+  <ul class="nav navbar-nav"> 
+    <li><a class="links" href="#about_me">Meet Me!</a></li>
+    <li><a class="links" href="#edu">Experience</a></li>
+    <li><a class="links" href="#projects">Projects</a></li>
+    <li><a class="links" href="#skills">Skills</a></li>
+    <li><a class="links" href="https://github.com/Ava-creates">Github</a></li>
   </ul>
  
 </nav>
 </div>
 	
 
-<section id="about_me">
+<section id="about_me" class="sect">
 	
 	<div id="picture">
 		<div id=polaroid>
-			<img src="lol.JPG">
-			<h1 class="line-1 anim-typewriter">Avani</h1>
+			<img src="me.jpg">
+			<h1 class="line-1 anim-typewriter">AVANI TIWARI</h1>
 		</div>
 
-
-	<p> Hello! I am Avani, a sophomore hoping to major in CS and Math. I am a strong advocate of women in STEM community and am an Oscar Wilde fan.  </p>
+	<p> Hello! I am Avani, a junior at NYUAD majoring in Computer Science and minoring in Math. I am a strong advocate of women and non binary people in STEM and have been working with weSTEM, a student interest group, to raise awareness about this cause and suport the STEM community on campus. Other than that I am passionate about about machine learning and data science. My coursework,so far, includes Data Structures, Algorithms,Linear Algebra, Probability and Statistics, Software Engineering, Computer System Organisations, and Applied Machine Learning. </p>
 
 </div>
+
+<div id=resume> <a href="https://drive.google.com/uc?export=download&id=1JmNTnooPq6v-II-pTlLBe1kFuMdW3xgu">Download my resume</a></div>
 
 
 </section>
 
 <section id="edu">
 
-	<h>EDUCATION</h>
+	<h>EXPERIENCE</h>
 
-	<p>Dr. VSEC class of 2020</p>
-	<p>NYUAD class of 2024</p>
-
-
-	<h1>COURSEWORK</h1>
 
 
 
@@ -63,12 +60,14 @@
       <div class="card gradient-custom">
         <div class="card-body p-4">
           <i class="fas fa-brain fa-2x mb-3"></i>
-          <h3>FALL 2020 </h3>
+          <h3>Docent at NYUAD art gallery</h3>
+          <p style="color: white;">November 2021- May 2022</p>
 
           <ul style="color: white;">
-          <li> Intro to CS</li>
-         	<li>Calc</li>
-         	<li>FYWS</li>
+          
+         	<li>Performed front-desk duties like taking phone calls, and assissting the visitors with registration </li>
+         	<li>Gave tours of the exhibitions</li>
+
          </ul>
           
         </div>
@@ -78,18 +77,19 @@
       <div class="card gradient-custom-4">
         <div class="card-body p-4">
           <i class="fas fa-camera fa-2x mb-3"></i>
-          <h3>FALL 2020 </h3>
+          <h3>Student research assistant at Data Science and AI lab</h3>
+          <p style="color: white;"> September 2021- November 2021</p>
 
           <ul style="color: white;">
-          <li> Data Structure</li>
-         	<li>Multivariable calculus</li>
-         	<li>Discrete Mathematics</li>
-		  <li>Transnational Feminism</li>
+         
+         	<li>Performed web scraping to get the required data</li>
+         	<li>Wrote python script to parse through the data acquired (in form of a plain text file)</li>
+		 
          </ul>
         </div>
       </div>
     </div>
-    <div class="timeline-4 left-4">
+    <!-- <div class="timeline-4 left-4">
       <div class="card gradient-custom">
         <div class="card-body p-4">
           <i class="fas fa-campground fa-2x mb-3"></i>
@@ -103,7 +103,7 @@
          
         </div>
       </div>
-    </div>
+    </div> -->
     
    
        
@@ -113,10 +113,6 @@
 
 </section>
 
-
-
-
-
 <section id="projects">
 	
 	<h> PROJECTS </h>
@@ -124,67 +120,99 @@
 
 
   <div class="wrapper">
+    <div class="card">
+        <input type="checkbox" id="card1" class="more" aria-hidden="true">
+        <div class="content">
+            <div class="front">
+                <div class="inner">
+                    <h2>STUDY BUDDY</h2>
+                    
+                    <label for="card1" class="button" aria-hidden="true">
+                        Details
+                    </label>
+                </div>
+            </div>
+            <div class="back">
+                <div class="inner">
+               
+                    
+                   
+                    <div class="description">
+                       <p> I worked in a team of four to develop this web app that enables our fellow NYU students from different campuses to find spontaneous study buddies. <br>
+                        To access the app students need to login using their NYU email ids which is verified by Google OAuth. Then they see a landing page which allows them to enter a chat room on the basis of theor preference(major, class, random). 
+                        Along with the chat box there are productivity boosting tools in the chat room like to-do list and Pomodoro timer.<br>
+                        I worked on the front end of the landing page you see after logging, chat box, to-do list and integration of the front and back end for the chat room. </p>
+
+                       </p>
+                       
+                        
+                        Built using- HTML/CSS/JS
+                       <br>
+                        <a href="https://github.com/Ava-creates/study_buddy">Link to the github repo!</a>
+                        <br>
+                        <a href="https://studybuddy-server.herokuapp.com/">Link to the website!</a>
+                        <br> You will not be able to login without a NYU email id tho 
+
+                    </div>
+                
+                
+
+                    
+                    <label for="card1" class="button return" aria-hidden="true">
+                        <i class="fas fa-arrow-left"></i>
+                    </label>
+                </div>
+                </div>
+            </div>
+       
+    </div>
         <div class="card">
-            <input type="checkbox" id="card1" class="more" aria-hidden="true">
+            <input type="checkbox" id="card4" class="more" aria-hidden="true">
             <div class="content">
-                <div class="front" style="background-image: url('https://images.unsplash.com/photo-1529408686214-b48b8532f72c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=986e2dee5c1b488d877ad7ba1afaf2ec&auto=format&fit=crop&w=1350&q=80')">
+                <div class="front">
                     <div class="inner">
                         <h2>RACCOON JUMP</h2>
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <label for="card1" class="button" aria-hidden="true">
+                        
+                        <label for="card4" class="button" aria-hidden="true">
                             Details
                         </label>
                     </div>
                 </div>
                 <div class="back">
                     <div class="inner">
-                        <div class="info">
-                           
-                            <div class="icon">
-                                <i class="fas fa-users"></i>
-                               
-                            </div>
-                        </div>
+                       
                         
                        
-                        <div class="info">
-                            
-                            
-                        </div>
                         <div class="description">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, accusamus.</p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates earum nostrum ipsam
-                                ullam, reiciendis nam consectetur? Doloribus voluptate architecto possimus perferendis
-                                tenetur nemo amet temporibus, enim soluta nam, debitis.</p>
+                            <p>
+                            It is a pc game made from scratch using python on Processing IDE. 
+                            I worked in a team of three to complete this project. My main contribution were the coconut fall feature, integration of the sound and graphics and along with the landing and end page of the game.  
+                            </p>
+                       
+                            
+                        <p>   Built using- Python/ Processing IDE</p> 
+
+                            
+                            <a href="https://github.com/mjk9913/raccoon-jump">Link to the github repo!</a>
                         </div>
-                        <div class="location"></div>
-                        <div class="price"> / day</div>
-                        <label for="card1" class="button return" aria-hidden="true">
+                    
+                        
+                        <label for="card4" class="button return" aria-hidden="true">
                             <i class="fas fa-arrow-left"></i>
                         </label>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="card">
             <input type="checkbox" id="card2" class="more">
             <div class="content">
-                <div class="front" style="background-image: url('https://images.unsplash.com/photo-1515263487990-61b07816b324?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c02fb96f9cfc16d3649835b75d1b2033&auto=format&fit=crop&w=1350&q=80')">
+                <div class="front" >
                     <div class="inner">
-                        <h2>SAKURA</h2>
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                            <i class="far fa-star"></i>
-                        </div>
+                        <h2>Anime Face Generation - Deep Learning</h2>
+
+                       
                         <label for="card2" class="button" aria-hidden="true">
                             Details
                         </label>
@@ -196,13 +224,15 @@
                        
                         <div class="description">
                             <p>
-				    <a href=sakura.html>here we go</a>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem unde ea voluptas
-                                fuga
-                                odio vel veniam eveniet, explicabo autem earum?</p>
+                                Contructed a Generative Adversarial Network that generates new anime faces using the images from a dataset
+                            </p>
+                         
+                            <p>  Built using- Python/ pytorch </p>
+
+                            <a href="https://github.com/Ava-creates/deep_learning_GAN">Link to the github repo!</a>
                            
                         </div>
-                        <div class="location"></div>
+                       
                         
                         <label for="card2" class="button return" aria-hidden="true">
                             <i class="fas fa-arrow-left"></i>
@@ -214,16 +244,10 @@
         <div class="card">
             <input type="checkbox" id="card3" class="more">
             <div class="content">
-                <div class="front" style="background-image: url('https://images.unsplash.com/photo-1529595354331-201ad3ae5e71?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6114533e2d0c1c81534fe13611dbfd76&auto=format&fit=crop&w=658&q=80')">
+                <div class="front">
                     <div class="inner">
-                        <h2>MOOD TRACKER</h2>
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
+                        <h2>Treasure Hunt</h2>
+                 
                         <label for="card3" class="button" aria-hidden="true">
                             Details
                         </label>
@@ -231,46 +255,53 @@
                 </div>
                 <div class="back">
                     <div class="inner">
-                        <div class="info">
+                       
                          
-                            <div class="icon">
-                                <i class="fas fa-users"></i>
-                                <span>people</span>
-                            </div>
-                        </div>
-                        <div class="info">
-                            <span>7</span>
-                            <div class="icon">
-                                <i class="fas fa-door-open"></i>
-                                <span>rooms</span>
-                            </div>
-                        </div>
-                        <div class="info">
-                    
-                            <div class="icon">
-                                <i class="fas fa-bed"></i>
-                                
-                            </div>
-                        </div>
-                        <div class="info">
-                           
-                            <div class="icon">
-                                <i class="fas fa-bath"></i>
-                                
-                            </div>
-                        </div>
+                            
                         <div class="description">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa libero
-                                totam nostrum consequatur autem quae provident quos alias fugit maxime nisi labore,
-                                temporibus tempore illo natus voluptates aliquam ipsum officia quasi placeat aut
-                                facilis
-                                laudantium nam!</p>
-                            <p>Quam, iusto.Neque ratione ut deserunt unde dicta nesciunt,
-                                repudiandae
-                                aspernatur explicabo numquam! Tenetur!</p>
+                            <p>Built a website in a team of four that runs a treasure hunt game across where you have to answer riddle to move on to the next round.</p>
+                            <p>  Built using- HTML/CSS/JavaScript</p>
+                            <a href="https://ava-creates.github.io/treasure_hunt/">Link to the game!</a>
                         </div>
+                      
+                   
                        
                         <label for="card3" class="button return" aria-hidden="true">
+                            <i class="fas fa-arrow-left"></i>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <input type="checkbox" id="card5" class="more">
+            <div class="content">
+                <div class="front">
+                    <div class="inner">
+                        <h2>weSTEM website </h2>
+                 
+                        <label for="card5" class="button" aria-hidden="true">
+                            Details
+                        </label>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="inner">
+                       
+                         
+                            
+                        <div class="description">
+                           <p> It is the website of the student interest group I have been involved with since freshman year.</p>
+                            <p>Developed of the get involved page</p>
+                            <p>Helped in debugging of the website</p>
+                            <p>  Built using- HTML/CSS/JavaScript</p>
+                            <a href="https://westem-nyuad.github.io/web/pages/get_involved.html">Link to the website!</a>
+                        </div>
+                      
+                   
+                       
+                        <label for="card5" class="button return" aria-hidden="true">
                             <i class="fas fa-arrow-left"></i>
                         </label>
                     </div>
@@ -285,20 +316,19 @@
 	<section id="skills">
 
 	<h> SKILLS</h>
-	<div>Icons made by <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">Flat Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+	<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">Flat Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
 
-	<div class="boss">
-		<div class="minions"><img src="python.png"><a href="#about_me"</div>
+	<div class="grid-container">
+		<div class="minions"><img src="python.png"></div>
 		<div class="minions"><img src="html.png"></div>
 		<div class="minions"><img src="css-file.png"></div>	
 		<div class="minions"><img src="javascript.png"></div>	
-		<div class="minions"><img src="java.png"></div>	
-			
+		<div class="minions"><img src="java.png"></div>	 
+        <div class="minions"><img src="cpp.png"></div>   
+    </div>
 
-</div>
-<div class="boss">
-	<div class="minions"><img src="cpp.png"></div>
-</div>
 </section>	
+
+
 </body>
 </html>
