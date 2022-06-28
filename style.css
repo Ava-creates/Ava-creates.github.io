@@ -572,8 +572,10 @@ h
   background-color: #859ddf ;
   color: white;
   font-size: 17px;
-  padding: 5px;
+  padding: 10px;
   text-align: center;
+  position: relative;
+  bottom: 5vh;
 
 }
 
