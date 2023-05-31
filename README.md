@@ -1,5 +1,5 @@
 # Ava-creates.github.io
 
-https://ava-creates.github.io/#about_me
+https://ava-creates.github.io
 
 link to the file
